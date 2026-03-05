@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reaktionstest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Reaktionstest</h1>
+    <p id="status">Druecke auf Start und warte auf das Signal.</p>
+
+    <button id="startBtn">Start</button>
+    <div
+      id="target"
+      class="target"
+      aria-label="Reaktionsflaeche"
+      role="button"
+      tabindex="0"
+    ></div>
+
+    <p>Deine Zeit: <span id="result">-</span></p>
+    <p>Bestzeit: <span id="best">-</span></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

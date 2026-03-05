@@ -1,0 +1,54 @@
+﻿body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.app {
+  width: min(420px, 92vw);
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#startBtn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #1f6feb;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#startBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.target {
+  margin: 20px auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  background: #d0d7de;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.target.waiting {
+  background: #f2cc60;
+}
+
+.target.ready {
+  background: #2ea043;
+}
+
+.target.too-soon {
+  background: #d1242f;
+}
